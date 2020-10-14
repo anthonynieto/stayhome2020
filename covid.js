@@ -5,12 +5,12 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['Civil War (1861-1865)', '1918 Flu Pandemic', 'Cancer (2019)', 'WWII (1941-1945)', 'AIDS (1987-1997)', 'WWI (1917-1918)', 'COVID-19 (2020)', 'Vietnam War (1955-1975)', 'Korean War (1950-1953)', 'Seasonal Flu (2018-2019)', 'Revolutionary War (1775-1783)'],
+        labels: ['Revolutionary War (1775-1783)', 'Seasonal Flu (2018-2019)','Korean War (1950-1953)', 'Vietnam War (1955-1975)', 'WWI (1917-1918)','COVID-19 (2020)', 'AIDS Epidemic (1987-1997)', 'WWII (1941-1945)','Cancer (2019)','1918 Flu Pandemic', 'Civil War (1861-1865)'],
         datasets: [{
-            label: 'Total Deaths (thousands)',
-            backgroundColor: ['#ACACAC', '#212121', '#FC4DEA', '#684913', '#F30707', '#1A48B3', '#E6960A', '#2C970C', '#FCFC24', '#6F00FF', '#A4A2A0'],
+            label: 'Total Deaths (Thousands)',
+            backgroundColor: ['#ACACAC', '#212121', '#33FF99', '#684913', '#1A48B3', '#E6960A', '#F30707', '#2C970C', '#FC4DEA', '#6F00FF', '#E4A8B4'],
             borderColor: 'rgb(255, 99, 132)',
-            data: [750, 675, 606.8, 405.4, 302.9, 116.5, 61.6, 58.2, 36.5, 34.2, 31.5]
+            data: [31.5, 34.2, 36.5, 58.2, 116.5, 220.1, 302.9, 405.4, 606.8, 675, 750]
         }]
     },
 
@@ -20,7 +20,7 @@ var chart = new Chart(ctx, {
     		display: false},
     	title: { 
     		display: true,
-    		text: 'U.S. Mortality Rate (Thousands)'
+    		text: 'COVID-19: U.S. Citizen Mortality Rate Comparison Chart (Thousands)'
     	}
     }
 });
